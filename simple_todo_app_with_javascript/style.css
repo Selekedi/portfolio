@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    padding: 24px;
+}
+
+header .logo span {
+    font-size: 40px;
+    font-family: cursive;
+
+}
+
+main {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #modal {
+    position: absolute;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+    background-color: #fefefe;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 0 1px #555;
+    z-index: 50;
+
+}
+
+main #modal > h2 {
+    margin-bottom: 16px;
+}
+
+main #modal > p {
+    margin-bottom: 16px;
+}
+
+main #modal textarea {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 16px;
+    
+
+}
+
+main #modal > .controls{
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+main #modal > .controls button {
+    background-color: #fefefe;
+    border: 0;
+    padding: 8px;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0 0 1px #555;
+}
+
+main #modal > .controls button.add-btn {
+    background-color: #000;
+    color: #fefefe;
+}
+
+main #modal > .controls button.edit-btn {
+    background-color: #55f;
+    color: #fefefe;
+}
+
+main #modal > .controls button.delete-btn{
+    background-color: #f55;
+    color: #fefefe;
+}
+
+main #modal.show {
+    transform: scale(1);
+}
+
+main #wrapper{
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 1px #555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+main #wrapper > h2 {
+    margin-bottom: 16px;
+}
+
+main #wrapper .add-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+main #wrapper .add-btn-container button {
+    background-color: #000;
+    border: 0;
+    padding: 8px;
+    color: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 0 1px #555;
+}
+
+main #wrapper > button {
+    background-color: #000;
+    border: 0;
+    padding: 8px;
+    color: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 0 1px #555;
+}
+
+main #wrapper > article {
+    cursor: pointer;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 1px #555;
+}
+
+main #wrapper > article p {
+    font-size: 18px;
+}
