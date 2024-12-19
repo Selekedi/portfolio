@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 32px;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: #111;
+}
+
+header .logo span {
+    font-size: 32px;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 21px;
+}
+
+main {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

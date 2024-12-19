@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %} Home{% endblock %}
+
+{% block style %} 
+<link rel="stylesheet" href="{{url_for('static', filename = 'css/index.css')}}">
+{% endblock %}
+
+{% block content %}
+<div id="modal"></div>
+<section id="container">
+
+</section>
+{% endblock %}
+
+{% block javascript %}
+<script src="{{url_for('static', filename = 'javascript/main.js')}}"></script>
+{% endblock %}

@@ -84,7 +84,8 @@ function createTodoArticle(task){
         tasks = updateLocalStorage("tasks",{"1":String(task)})
     }else {
         const newtasksObject = tasks
-        const newKey = Object.entries(newtasksObject).length + 1
+        const keys = Object.keys(newtasksObject)
+        const newKey = Number(keys[keys.length - 1]) + 1
         newtasksObject[String(newKey)] = String(task)
         tasks = updateLocalStorage("tasks",newtasksObject)
     }

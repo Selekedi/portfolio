@@ -118,6 +118,10 @@ main #wrapper .add-btn-container button {
     box-shadow: 0 0 1px #555;
 }
 
+main #wrapper article {
+    display: block;
+}
+
 main #wrapper > button {
     background-color: #000;
     border: 0;

@@ -1,0 +1,41 @@
+#auth-container {
+    padding: 16px;
+    background-color: #fefefe;
+    box-shadow: 0 0 1px #555;
+    border-radius: 8px;
+}
+
+#auth-container form > h2{
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+
+#auth-container form > .form-group {
+    margin: 8px 0;
+}
+
+#auth-container form > .form-group label {
+    display: block;
+    font-size: 21px;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+
+#auth-container form > .form-group input {
+    padding: 8px;
+    font-size: 21px;
+    outline: 0;
+    border-radius: 8px;
+}
+
+#auth-container form > button#auth-btn {
+    padding: 4px;
+    font-size: 21px;
+    background-color: #111;
+    color: #fefefe;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}

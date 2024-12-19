@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} title{% endblock %}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = '../static/css/style.css')}}">
+    {% block style %} {% endblock %}
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/" class="logo_brand">
+                <span>
+                    LOGO
+                </span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                {% if current_user.authenticated %}
+                <li><a href="/log_out" class="link">Log Out</a></li>
+                {% else %}
+                <li><a href="/sign_in" class="link">Sign In</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    {% block javascript %} {% endblock %}
+</body>
+</html>
