@@ -1,0 +1,104 @@
+#modal {
+    position: absolute;
+    padding: 16px;
+    box-shadow: 0 0 1px #555;
+    border-radius: 8px;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+    background-color: #fefefe;
+    font-size: 21px;
+
+}
+
+#modal #create-view {
+    font-size: 21px;
+}
+
+#modal textarea {
+    font-size: 21px;
+    display: block;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+#modal #create-view .controls {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+#modal .controls {
+    margin: 8px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+#modal .controls button {
+    padding: 4px 16px; 
+    border-radius: 8px;
+}
+
+.add-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 4px 16px; 
+    border-radius: 8px;
+}
+
+#modal .controls .close-btn {
+    background-color: #fefefe;
+    color: #000;
+}
+
+#modal .controls .edit-btn {
+    background-color: #55e;
+    color: #000;
+}
+
+#modal .controls .delete-btn {
+    background-color: #e55;
+    color: #000;
+}
+
+#modal.show {
+    transform: scale(1);
+}
+
+#container {
+    padding: 16px;
+    background-color: #fefefe;
+    box-shadow: 0 0 1px #555;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#container #no-tasks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+#container #no-tasks-container .add-btn {
+    padding: 4px 16px;
+    border-radius: 8px;
+}
+
+#container #add-tasks {
+    margin-bottom: 8px;
+}
+
+#container article {
+    display: block;
+    cursor: pointer;
+    font-size: 21px;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 0 1px #555;
+}
+

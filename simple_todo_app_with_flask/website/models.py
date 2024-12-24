@@ -12,3 +12,6 @@ class Item(db.Model):
     id = db.Column(db.Integer,primary_key = True)
     item_message = db.Column(db.String(500),nullable = False)
     user_id = db.Column(db.Integer,db.ForeignKey('user.id'),nullable = False)
+
+    def as_dict(self):
+        return {'id':self.id,"task":self.item_message}

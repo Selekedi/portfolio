@@ -18,7 +18,7 @@
         </div>
         <nav>
             <ul>
-                {% if current_user.authenticated %}
+                {% if current_user.is_authenticated %}
                 <li><a href="/log_out" class="link">Log Out</a></li>
                 {% else %}
                 <li><a href="/sign_in" class="link">Sign In</a></li>

@@ -1,4 +1,4 @@
-from flask import Blueprint,request,render_template,jsonify
+from flask import Blueprint,request,render_template,jsonify,redirect,url_for
 from flask_login import login_user,logout_user
 import re
 from . models import User
@@ -57,3 +57,4 @@ def sign_up():
 @auth.route("/log_out")
 def log_out():
     logout_user()
+    return redirect(url_for("views.home"))
