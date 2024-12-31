@@ -64,7 +64,7 @@ function updateSignInForm(){
 
 async function signInUser(email,password){
     try {
-        const response =  await fetch("http://127.0.0.1:5000/sign_in",{
+        const response =  await fetch("sign_in",{
             method:"post",
             headers:{
                 'Content-Type':'application/json',
@@ -110,7 +110,7 @@ async function signUpUser(email,password,name,confrimPassword){
     }
 
     try {
-        const response = await fetch("http://127.0.0.1:5000/sign_up",{
+        const response = await fetch("sign_up",{
             method:"post",
             headers:{
                 'Content-Type':"application/json"

@@ -115,7 +115,7 @@ async function createTask(){
         return
     }
     try {
-        const response = await fetch(hostUrl + "/task",{
+        const response = await fetch("task",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -147,7 +147,7 @@ async function editTask(id) {
         return
     }
     try {
-        const response = await fetch(hostUrl + "/task",{
+        const response = await fetch("task",{
             method:"PUT",
             headers:{
                 "Content-Type":"application/json"
@@ -176,7 +176,7 @@ async function editTask(id) {
 
 async function deleteTask(id) {
     try {
-        const response = await fetch(hostUrl + "/task",{
+        const response = await fetch("task",{
             method:"DELETE",
             headers:{
                 "Content-Type":"application/json"
@@ -204,7 +204,7 @@ async function deleteTask(id) {
 
 async function getTasks(){
     try {
-        const response = await fetch(hostUrl + "/tasks")
+        const response = await fetch("tasks")
         if(!response.ok){
             console.log("network error")
             return false

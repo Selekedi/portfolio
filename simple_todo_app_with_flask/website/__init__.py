@@ -2,6 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from os import path
+from flask_cors import CORS
 
 
 
@@ -32,6 +33,8 @@ def create_app():
     @load_manager.user_loader
     def load_user(id):
         return User.query.get(int(id))
+    
+    CORS(app)
 
     return app
 

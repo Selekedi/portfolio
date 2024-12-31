@@ -21,6 +21,7 @@ def sign_in():
         if not check_password_hash(user.password,password):
             return jsonify({"siggnedIn":False})
         login_user(user)
+        print("Logged In")
         return jsonify({"signnedIn":True})
     return render_template("sign_in.html")
 
